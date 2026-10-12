@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071321">
+  <title>SKYFALL Combat</title>
+</head>
+<body>
+  <div id="app">
+    <canvas id="game-canvas"></canvas>
+    <header>
+      <strong>SKYFALL <span>COMBAT SYSTEMS</span></strong>
+      <span id="status">FLIGHT TEST / 0.1.0</span>
+    </header>
+    <aside class="panel">
+      <h2>XF-01 PROTOTYPE</h2>
+      <p>Speed: <b id="speed">0</b> km/h</p>
+      <p>Altitude: <b id="altitude">1200</b> m</p>
+      <p>Heading: <b id="heading">000</b>°</p>
+      <p>Throttle: <b id="throttle">68</b>%</p>
+      <p>Vertical speed: <b id="vertical">0</b> m/s</p>
+      <hr>
+      <small>W/S PITCH · A/D ROLL · Q/E YAW</small>
+      <small>ARROWS THROTTLE/PITCH · SHIFT BOOST · R LEVEL OUT</small>
+      <small>MOUSE AIM · ESC RELEASE MOUSE</small>
+    </aside>
+    <div id="reticle"></div>
+    <div id="launch">
+      <div class="card">
+        <small>SIMULATION READY</small>
+        <h1>TAKE THE<br><span>CONTROLS.</span></h1>
+        <p>Enter the arena. Learn the handling. Own the sky.</p>
+        <button id="start">INITIALIZE FLIGHT</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
